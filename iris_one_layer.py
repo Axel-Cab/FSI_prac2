@@ -52,7 +52,7 @@ print "   Start training...  "
 print "----------------------"
 
 batch_size = 20
-list = []
+lis = []
 for step in xrange(1000):
     for jj in xrange(len(x_data) / batch_size):
         batch_xs = x_data[jj*batch_size : jj*batch_size+batch_size]
