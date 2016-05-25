@@ -74,5 +74,5 @@ for step in xrange(1000):
             
             
 plt.plot(lis)
-plt.ylabel(“Errores”)
+plt.ylabel("Errores")
 plt.show()
