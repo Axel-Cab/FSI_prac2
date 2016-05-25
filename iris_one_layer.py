@@ -62,7 +62,8 @@ for step in xrange(1000):
         if step % 50 == 0:
             print "Iteration #:", step, "Error: ", sess.run(cross_entropy, feed_dict={x: batch_xs, y_: batch_ys})
             result = sess.run(y, feed_dict={x: batch_xs})
-            lis.append(result)
+            error = sess.run(cross_entropy, feed_dict={x: batch_xs, y_: batch_ys})
+            lis.append(error)
             for b, r in zip(batch_ys, result):
                 print b, "-->", r
             print "----------------------------------------------------------------------------------"
